@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="../static/css/style.css">
+        <meta name="viewport" content="width=device-width" initial-scale="1.0">
+
+    </head>
+    <body>
+        <div class="userinput" id="userinput">
+        
+            
+            <form action="{{ url_for('match_text')}}"method="post" id="fuserinput">
+            <img alt="aryan-logo" class="aryan-logo" src="../static/images/ARYAN LOGO.jpg" style="display:inline-block">
+          
+
+              <input type="text" id="songtitle" class="songtitle" name="songtitle" value="" placeholder="Enter Song Title">
+              <input type="text" id="artist" class="artist" name="artist" value=""  placeholder="Enter Artist name">
+              <input type="text" id="genres" value="" placeholder="Enter Your  Favorite Genres">
+              <input type="submit" id="search" value="search" name="search">
+              
+            </form>
+        </div>
+        <div class="output" id="output">
+            <div>
+                {{ prediction_text }}
+            </div>
+            <section>
+                
+              <div class= "container-title">Popular&nbsp;
+                <span style="color: #f93">Hits</span>
+              </div>
+              
+              <div class= "song-box">
+              
+                <div class= "song-info">
+                    <img alt="song poster" src="../static/images/a dil.jpg">
+                  <div class= "song-name">Ae Dil Hai Mushkil</div>
+                  <div class= "artist-name"><i class="fa-solid fa-heart"></i>Arijit Singh</div>
+                </div>
+                
+                <div class= "song-info">
+                    <img alt="song poster" src="../static/images/bon.jpg">
+                  <div class= "song-name">Bon Appetite</div>
+                  <div class= "artist-name"><i class="fa-solid fa-heart"></i>Katy Perry</div>
+                </div>
+              
+                <div class= "song-info">
+                    <img alt="song poster" src="../static/images/e mere.jpg">
+                  <div class= "song-name">Ae Mere Humsafar</div>
+                  <div class= "artist-name"><i class="fa-solid fa-heart"></i>Udit Narayan</div>
+                </div>
+                
+                <div class= "song-info">
+                    <img alt="song poster" src="../static/images/fadet.jpg" style="display:inline-block">
+                  <div class= "song-name">Faded</div>
+                  <div class= "artist-name"><i class="fa-solid fa-heart"></i>Alan Walker</div>
+                </div>
+                
+                  <div class= "song-info">
+                      <img alt="song poster" src="../static/images/ghost.jpg">
+                  <div class= "song-name">Dancing With Your Ghost</div>
+                  <div class= "artist-name"><i class="fa-solid fa-heart"></i>Sasha Alex Sloan</div>
+                </div>
+                
+                
+                <div class= "song-info">
+                    <img alt="song poster" src="../static/images/ek hasina.jpg">
+                  <div class= "song-name">Ek Ajnabee Haseena</div>
+                  <div class= "artist-name"><i class="fa-solid fa-heart"></i>Kishore Kumar</div>
+                </div>
+                
+                <div class= "song-info">
+                    <img alt="song poster" src="../static/images/hymn.jpg">
+                  <div class= "song-name">Hymn For The Weekend</div>
+                  <div class= "artist-name"><i class="fa-solid fa-heart"></i>Coldplay</div>
+                </div>
+              
+                <div class= "song-info">
+                    <img alt="song poster" src="../static/images/gulabi.jpg">
+                  <div class= "song-name">Gulabi Aankhein</div>
+                  <div class= "artist-name"><i class="fa-solid fa-heart"></i>Mohammed Rafi</div>
+                </div>
+                
+                <div class= "song-info">
+                    <img alt="song poster" src="../static/images/ina sona.jpg" >
+                  <div class= "song-name">Enna Sona</div>
+                  <div class= "artist-name"><i class="fa-solid fa-heart"></i>Arijit Singh</div>
+                </div>
+                
+                  <div class= "song-info">
+                      <img alt="song poster" src="../static/images/kehna hai.jpg">
+                  <div class= "song-name">Kehna Hai Kya</div>
+                  <div class= "artist-name"><i class="fa-solid fa-heart"></i>K.S.Chithra</div>
+                </div>
+                <div class= "song-info">
+                    <img alt="song poster" src="../static/images/malone.jpg">
+                  <div class= "song-name">Sunflower</div>
+                  <div class= "artist-name"><i class="fa-solid fa-heart"></i>Post Malone</div>
+                </div>
+                
+                <div class= "song-info">
+                    <img alt="song poster" src="../static/images/lag ja gale.jpg">
+                  <div class= "song-name">Lag Ja Gale</div>
+                  <div class= "artist-name"><i class="fa-solid fa-heart"></i>Lata Mangeshkar</div>
+                </div>
+              
+                <div class= "song-info">
+                    <img alt="song poster" src="../static/images/night.jpg">
+                  <div class= "song-name">Night Changes</div>
+                  <div class= "artist-name"><i class="fa-solid fa-heart"></i>One Direction</div>
+                </div>
+                
+                <div class= "song-info">
+                    <img alt="song poster" src="../static/images/nile nile.jpg" >
+                  <div class= "song-name">Neele Neele Ambar Par</div>
+                  <div class= "artist-name"><i class="fa-solid fa-heart"></i>Kishore Kumar</div>
+                </div>
+                
+                  <div class= "song-info">
+                      <img alt="song poster" src="../static/images/let me.jpg">
+                  <div class= "song-name">Let Me Down Slowly</div>
+                  <div class= "artist-name"><i class="fa-solid fa-heart"></i>Alec Benjamin</div>
+                </div>
+                <div class= "song-info">
+                    <img alt="song poster" src="../static/images/om santi.jpg">
+                  <div class= "song-name">Om Shanti Om</div>
+                  <div class= "artist-name"><i class="fa-solid fa-heart"></i>Kishore Kumar</div>
+                </div>
+                
+                <div class= "song-info">
+                    <img alt="song poster" src="../static/images/rat baki.jpg">
+                  <div class= "song-name">Raat Baaqi Baat Baaqi</div>
+                  <div class= "artist-name"><i class="fa-solid fa-heart"></i>Asha Bhosle</div>
+                </div>
+              
+                <div class= "song-info">
+                    <img alt="song poster" src="../static/images/old.jpg">
+                  <div class= "song-name">Old Town Road</div>
+                  <div class= "artist-name"><i class="fa-solid fa-heart"></i>Lil Nas X</div>
+                </div>
+                
+                <div class= "song-info">
+                    <img alt="song poster" src="../static/images/o mere dil.jpg" >
+                  <div class= "song-name">O Mere Dil Ke Chain</div>
+                  <div class= "artist-name"><i class="fa-solid fa-heart"></i>Kishore Kumar</div>
+                </div>
+                
+                  <div class= "song-info">
+                      <img alt="song poster" src="../static/images/keshariya.jpg">
+                  <div class= "song-name">Kesariya</div>
+                  <div class= "artist-name"><i class="fa-solid fa-heart"></i>Arijit Singh</div>
+                </div>
+                
+              
+                
+              </div>
+              
+                
+            
+              
+              </section>
+              
+              
+                
+              
+                
+             
+              
+        </div>
+
+    </body>
+
+</html>
